@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Nav from '../components/Nav'
 
 import '../styles.scss'
 
@@ -9,9 +10,15 @@ export default function App({ Component, pageProps }) {
         <title>Split.Run - Calculating Running Track Splits and Paces</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link
+          rel="preload"
+          href="/fonts/Syne/Syne-Bold.otf"
+          as="font"
+          crossOrigin=""
+        />
       </Head>
 
-      <h1>This page has a title 🤔</h1>
+      <Nav />
       <Component {...pageProps} />
     </div>
   )

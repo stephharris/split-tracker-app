@@ -1,5 +1,5 @@
-function HomePage() {
-  return <div className="app">Welcome to Next.js!</div>
-}
+const Index = () => (
+  <div>YAY</div>
+)
 
-export default HomePage
+export default Index
